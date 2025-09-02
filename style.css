@@ -1,0 +1,101 @@
+
+ 
+
+        /* Tailwind config (optional custom theme) */
+        :root {
+            --ring: 0 0% 100%;
+        }
+
+        /* Keyframes */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        .btn-shimmer {
+            background-image: linear-gradient(90deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, .35), rgba(255, 255, 255, .15));
+            background-size: 200% 100%;
+            animation: shimmer 2s linear infinite;
+        }
+
+        /* Simple reveal on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: all .7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Glass card */
+        .glass {
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(90deg, #22d3ee, #a78bfa, #34d399);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hover-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .hover-card:hover {
+            transform: translateY(-6px) scale(1.02);
+            border-color: transparent;
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(139, 92, 246, 0.15));
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.4),
+                0 0 25px rgba(139, 92, 246, 0.4);
+        }
+
+        /* Project cards */
+        .project-card {
+            transition: all 0.3s ease-in-out;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            border-color: transparent;
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(139, 92, 246, 0.1));
+            box-shadow: 0 0 20px rgba(34, 211, 238, 0.35),
+                0 0 30px rgba(139, 92, 246, 0.35);
+        }
+
+        .project-img {
+            transition: transform 0.4s ease;
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.1);
+        }
+   

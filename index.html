@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umair Khan — Portfolio</title>
+    <meta name="description" content="Modern, responsive, animated portfolio of Umair Khan (Web Developer)." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-cyan-400/40">
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-neutral-950/60 backdrop-blur border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#home" class="text-xl font-bold tracking-tight gradient-text">Umair Portfolio</a>
+                <nav class="hidden md:flex items-center gap-6 text-sm">
+                    <a href="#home" class="hover:text-cyan-300">Home</a>
+                    <a href="#about" class="hover:text-cyan-300">About</a>
+                    <a href="#services" class="hover:text-cyan-300">Services</a>
+                    <a href="#projects" class="hover:text-cyan-300">Projects</a>
+                    <a href="#skills" class="hover:text-cyan-300">Skills</a>
+                    <a href="#contact" class="hover:text-cyan-300">Hire me</a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="menuBtn" aria-label="Toggle Menu"
+                        class="p-2 rounded-xl border border-white/10 hover:bg-white/5">
+                        <i class="ri-menu-3-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="hidden md:hidden pb-4">
+                <div class="grid gap-2 text-sm">
+                    <a href="#home" class="py-2 hover:text-cyan-300">Home</a>
+                    <a href="#about" class="py-2 hover:text-cyan-300">About</a>
+                    <a href="#services" class="py-2 hover:text-cyan-300">Services</a>
+                    <a href="#projects" class="py-2 hover:text-cyan-300">Projects</a>
+                    <a href="#skills" class="py-2 hover:text-cyan-300">Skills</a>
+                    <a href="#contact" class="py-2 hover:text-cyan-300">Hire me</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="relative pt-28 md:pt-32">
+        <!-- radial glow -->
+        <div class="pointer-events-none absolute inset-0 -z-10">
+            <div class="absolute -top-32 left-1/2 -translate-x-1/2 h-80 w-[40rem] rounded-full blur-3xl opacity-40"
+                style="background: radial-gradient(closest-side, rgba(56,189,248,0.35), transparent 70%);"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 items-center gap-10">
+            <div class="reveal">
+                <p class="text-sm tracking-wider text-neutral-300/80">Assalamualaikum 👋 I'm</p>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-2">
+                    Umair Khan
+                    <span class="block text-xl md:text-2xl mt-3 font-medium gradient-text">Web Developer — PHP • MySQL
+                    </span>
+                </h1>
+                <p class="mt-5 text-neutral-300/90">I craft fast, responsive and secure web apps. Modern UI, clean code,
+                    and real business value. Karachi based, available for freelance & remote.</p>
+                <div class="mt-7 flex flex-wrap gap-3">
+                    <a href="#contact"
+                        class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl bg-cyan-500 hover:bg-cyan-400 text-neutral-900 font-semibold transition">
+                        <i class="ri-send-plane-2-line"></i> Hire Me
+                    </a>
+                    <a href="Umair_CV.pdf" download
+                        class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60 hover:text-cyan-300 transition">
+                        <i class="ri-download-2-line"></i> Download CV
+                    </a>
+                    <a href="#projects"
+                        class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60 hover:text-cyan-300 transition">
+                        <i class="ri-briefcase-line"></i> View Work
+                    </a>
+                </div>
+                <div class="mt-6 flex items-center gap-4 text-xl">
+                    <a href="https://github.com/" target="_blank" class="hover:text-cyan-300" aria-label="GitHub"><i
+                            class="ri-github-line"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="hover:text-cyan-300"
+                        aria-label="LinkedIn"><i class="ri-linkedin-line"></i></a>
+                    <a href="mailto:umair.professional37@gmail.com" class="hover:text-cyan-300" aria-label="Email"><i
+                            class="ri-mail-line"></i></a>
+                </div>
+            </div>
+
+            <!-- Avatar / Card -->
+            <div class="reveal">
+                <div class="relative mx-auto w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden ring-2 ring-white/10 shadow-[0_0_100px_-30px] shadow-cyan-500/60"
+                    style="animation: float 4s ease-in-out infinite;">
+                    <!-- Replace with your photo -->
+                    <img src="umair.png" alt="Umair Khan portrait" class="w-full h-full object-cover" />
+                </div>
+                <div class="mt-6 grid grid-cols-3 gap-4">
+                   <div class="glass rounded-2xl p-4 text-center bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+    <div class="text-2xl font-bold">1+</div>
+    <div class="text-xs text-neutral-300/80">Years Exp</div>
+</div>
+
+<div class="glass rounded-2xl p-4 text-center bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+    <div class="text-2xl font-bold">15+</div>
+    <div class="text-xs text-neutral-300/80">Projects</div>
+</div>
+
+<div class="glass rounded-2xl p-4 text-center bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+    <div class="text-2xl font-bold">10</div>
+    <div class="text-xs text-neutral-300/80">Clients</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-2 items-start gap-12">
+            <div class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold">About <span class="gradient-text">Me</span></h2>
+                <p class="mt-4 text-neutral-300/90 leading-relaxed">I'm a full‑stack minded web developer specializing
+                    in PHP (Laravel) & MySQL with a keen eye for modern UI. I build dashboards, e‑commerce, and booking
+                    systems with best practices: secure auth, clean APIs, and pixel‑perfect frontends.</p>
+                <ul class="mt-5 space-y-2 text-neutral-300/90">
+                    <li class="flex items-start gap-3"><i class="ri-check-line mt-1 text-cyan-400"></i> Responsive
+                        first, mobile‑optimized layouts</li>
+                    <li class="flex items-start gap-3"><i class="ri-check-line mt-1 text-cyan-400"></i> Reusable
+                        components & clean architecture</li>
+                    <li class="flex items-start gap-3"><i class="ri-check-line mt-1 text-cyan-400"></i> SEO basics,
+                        performance & accessibility</li>
+                </ul>
+                <div class="mt-6 flex gap-3">
+                    <a href="#contact"
+                        class="px-5 py-3 rounded-2xl bg-cyan-500 text-neutral-900 font-semibold hover:bg-cyan-400 transition">Let’s
+                        Work</a>
+                    <a href="#projects"
+                        class="px-5 py-3 rounded-2xl border border-white/15 hover:border-cyan-400/60 hover:text-cyan-300 transition">View
+                        Projects</a>
+                </div>
+            </div>
+            <div class="reveal">
+                <div class="grid gap-4">
+                    <div
+                        class="glass rounded-2xl p-5 bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+                        <div class="text-sm uppercase tracking-wider text-neutral-300/70">Current Focus</div>
+                        <p class="mt-2 text-neutral-300/90 leading-relaxed">
+                            Developing interactive and scalable web applications with React & Express.
+                            Emphasizing secure authentication, clean architecture, and performance-optimized dashboards.
+                        </p>
+                    </div>
+
+                    <div
+                        class="glass rounded-2xl p-5 bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+                        <div class="text-sm uppercase tracking-wider text-neutral-300/70">Also Exploring</div>
+                        <p class="mt-2 text-neutral-300/90 leading-relaxed">
+                            Advancing skills in automation, algorithmic trading, and ethical hacking.
+                            Continuously learning modern tools and frameworks to enhance efficiency and security.
+                        </p>
+                    </div>
+
+                    <div
+                        class="glass rounded-2xl p-5 bg-neutral-900/30 backdrop-blur-md transition-all transform hover:-translate-y-2 hover:scale-105 hover:shadow-xl hover:bg-cyan-900/50 duration-300 cursor-pointer">
+                        <div class="text-sm uppercase tracking-wider text-neutral-300/70">Location</div>
+                        <p class="mt-2 text-neutral-300/90 leading-relaxed">
+                            Karachi, Pakistan. Open to remote collaboration and contributing to international projects.
+                        </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- servisces -->
+
+    <section id="services" class="bg-white/5 border-y border-white/10">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">
+                Services I <span class="gradient-text">Provide</span>
+            </h2>
+            <p class="mt-3 text-center text-neutral-300/80">
+                Fast delivery • Clean UI • Ongoing support
+            </p>
+
+            <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service Card -->
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-brush-4-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">Static Web Design</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        HTML, CSS, Bootstrap & jQuery — pixel-perfect responsive landing pages and marketing sites.
+                    </p>
+                </div>
+
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-code-s-slash-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">Dynamic Web Development</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        PHP, Laravel, Node.js, MySQL — full-stack web apps, dashboards and APIs with secure auth.
+                    </p>
+                </div>
+
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-database-2-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">Database & Schema Design</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Database architecture, ER diagrams, optimized MySQL schemas and migration-ready SQL files.
+                    </p>
+                </div>
+
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-pen-nib-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">UI / Figma Designs</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Figma prototypes, UI kits, and hand-off assets ready for development.
+                    </p>
+                </div>
+
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-file-excel-2-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">MS Office / Excel</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Excel spreadsheets, formulas, data analysis, automation and MIS reporting.
+                    </p>
+                </div>
+
+                <div class="reveal glass rounded-2xl p-6 hover-card">
+                    <i class="ri-slideshow-3-line text-3xl"></i>
+                    <h3 class="mt-3 font-semibold text-lg">Presentations & Pitch Decks</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Professional PowerPoint designs and pitch decks tailored to your audience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="flex items-end justify-between gap-6">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
+                <p class="mt-2 text-neutral-300/80">A few highlights — more on request.</p>
+            </div>
+            <a href="#"
+                class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-white/15 hover-card transition">
+                <i class="ri-external-link-line"></i> All Projects
+            </a>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="watches .png" alt="Admin dashboard" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="mt-3 font-semibold text-lg">Watches Collection</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Stylish and modern wrist watches — premium designs with durability and elegance for every
+                        occasion.
+                    </p>
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""> <span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click
+                                Here</span></a>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="soccer.png" alt="E-commerce" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="mt-3 font-semibold text-lg">Soccer</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Everything about the world’s favorite sport — live scores, team updates, fixtures, and match
+                        highlights.
+                    </p>
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""><span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click Here
+                            </span></a>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="watches .png" alt="Booking system" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="mt-3 font-semibold text-lg">Online Education</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Learn from anywhere with access to online courses, interactive lessons, and skill-building
+                        resources.
+                    </p>
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""> <span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click
+                                Here</span></a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="metric.png" alt="Booking system" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="mt-3 font-semibold text-lg">Metric Converter</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Quickly convert between units like length, weight, temperature, and volume with ease.
+                    </p>
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""> <span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click
+                                Here</span></a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="weather.png" alt="Booking system" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="mt-3 font-semibold text-lg">Weather </h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Check real-time weather by entering your city name — get temperature, humidity, forecasts, and
+                        live updates instantly with API integration.
+                    </p>
+
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""> <span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click
+                                Here</span></a>
+
+                    </div>
+                </div>
+            </article>
+            <article class="reveal glass rounded-2xl overflow-hidden flex flex-col project-card">
+                <img src="quiz.png" alt="Booking system" class="h-40 w-full object-cover project-img" />
+                <div class="p-5 flex-1 flex flex-col">
+                    <h3 class="font-semibold text-lg">Quiz </h3>
+                    <h3 class="mt-3 font-semibold text-lg">Quiz</h3>
+                    <p class="mt-2 text-sm text-neutral-300/90">
+                        Test your knowledge with fun and interactive quizzes on various subjects online.
+                    </p>
+                    <div class="mt-auto pt-4 flex items-center gap-3 text-xs text-neutral-300/70">
+                        <a href=""> <span class="px-2 py-1 rounded-lg bg-white/5 border border-white/10">Click
+                                Here</span></a>
+
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="bg-white/5 border-y border-white/10">
+        <div class="max-w-6xl mx-auto px-4 py-20">
+            <h2 class="text-3xl md:text-4xl font-bold text-center">Core <span class="gradient-text">Skills</span></h2>
+            <div class="mt-10 grid md:grid-cols-2 gap-8">
+                <div class="reveal">
+                    <div class="mb-4 font-medium">PHP </div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[90%] bg-cyan-500"></div>
+                    </div>
+                    <div class="mt-6 mb-4 font-medium">MySQL</div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[88%] bg-cyan-500"></div>
+                    </div>
+                    <div class="mt-6 mb-4 font-medium">Html</div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[80%] bg-cyan-500"></div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="mb-4 font-medium">Bootstrap </div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[92%] bg-cyan-500"></div>
+                    </div>
+                    <div class="mt-6 mb-4 font-medium">Css</div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[72%] bg-cyan-500"></div>
+                    </div>
+                    <div class="mt-6 mb-4 font-medium">Sql</div>
+                    <div class="h-3 w-full rounded-xl bg-white/10 overflow-hidden">
+                        <div class="h-full w-[60%] bg-cyan-500"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-20">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div class="reveal">
+                <h2 class="text-3xl md:text-4xl font-bold">Let’s <span class="gradient-text">Collaborate</span></h2>
+                <p class="mt-2 text-neutral-300/85">Chhota contact form — jaldi reply milega.</p>
+
+                <div class="mt-6 space-y-3 text-neutral-300/90">
+                    <!-- Location -->
+                    <a href="https://maps.app.goo.gl/QGNNWZsEXQbNdsAj8 " target="_blank" aria-label="Location"
+                        class="flex items-center gap-3 p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                        <i class="ri-map-pin-line"></i> Karachi, PK
+                    </a>
+
+                    <!-- Gmail -->
+                    <a href="mailto:umair.professional37@gmail.com" aria-label="Email"
+                        class="flex items-center gap-3 p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                        <i class="ri-mail-line"></i> umair.professional37@gmail.com
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/923443085123" target="_blank" aria-label="WhatsApp"
+                        class="flex items-center gap-3 p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                        <i class="ri-whatsapp-line"></i> WhatsApp
+                    </a>
+
+
+                </div>
+            </div>
+            <form class="reveal glass rounded-2xl p-6 grid gap-4" onsubmit="sendToWhatsApp(event)">
+                <div>
+                    <label class="text-sm text-neutral-300/80">Your Name</label>
+                    <input id="name" required type="text"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="e.g. jhon" />
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-300/80">Email</label>
+                    <input id="email" required type="email"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="you@email.com" />
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-300/80">Message</label>
+                    <textarea id="message" required rows="4"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button
+                    class="group relative inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-cyan-500 text-neutral-900 font-semibold hover:bg-cyan-400 transition overflow-hidden">
+                    <span class="absolute inset-0 opacity-0 group-hover:opacity-100 btn-shimmer"></span>
+                    <i class="ri-send-plane-fill"></i>
+                    Send
+                </button>
+            </form>
+
+            <script>
+                function sendToWhatsApp(event) {
+                    event.preventDefault();
+
+                    let name = document.getElementById("name").value;
+                    let email = document.getElementById("email").value;
+                    let message = document.getElementById("message").value;
+
+                    let phoneNumber = "923443085123"; // 👈 apna WhatsApp number yahan dalain (92 code k sath)
+                    let finalMessage = `New Contact Form Submission:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+
+                    let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(finalMessage)}`;
+                    window.open(url, "_blank"); // WhatsApp open hoga aur message ready hoga
+                }
+            </script>
+
+
+            <!-- <form class="reveal glass rounded-2xl p-6 grid gap-4"
+                onsubmit="event.preventDefault(); alert('Thanks! I will contact you soon.'); this.reset();">
+                <div>
+                    <label class="text-sm text-neutral-300/80">Your Name</label>
+                    <input required type="text"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="e.g., Ali Raza" />
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-300/80">Email</label>
+                    <input required type="email"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="you@email.com" />
+                </div>
+                <div>
+                    <label class="text-sm text-neutral-300/80">Message</label>
+                    <textarea required rows="4"
+                        class="mt-1 w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:border-cyan-400"
+                        placeholder="Tell me about your project..."></textarea>
+                </div>
+                <button
+                    class="group relative inline-flex justify-center items-center gap-2 px-5 py-3 rounded-2xl bg-cyan-500 text-neutral-900 font-semibold hover:bg-cyan-400 transition overflow-hidden">
+                    <span class="absolute inset-0 opacity-0 group-hover:opacity-100 btn-shimmer"></span>
+                    <i class="ri-send-plane-fill"></i>
+                    Send
+                </button>
+            </form> -->
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-neutral-950 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
+            <!-- Copy -->
+            <p class="text-sm text-neutral-400">
+                © <span id="year"></span> Umair Khan. All rights reserved.
+            </p>
+
+            <!-- Socials -->
+            <div class="flex items-center gap-4 text-xl">
+                <!-- GitHub -->
+                <a href="https://github.com/" target="_blank" aria-label="GitHub"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-github-line"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/umair-khan-b9a456306/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BzG2BOtYVT9a%2FqFs7g7XuZQ%3D%3D"
+                    target="_blank" aria-label="LinkedIn"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:umair.professional37@gmail.com" aria-label="Email"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-mail-line"></i>
+                </a>
+
+                <!-- WhatsApp -->
+                <a href="https://wa.me/923443085123" target="_blank" aria-label="WhatsApp"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+
+                <!-- Call -->
+                <a href="tel:03493715284" aria-label="Call"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-phone-line"></i>
+                </a>
+
+                <!-- Back to top -->
+                <a href="#home" aria-label="Back to top"
+                    class="p-2 rounded-xl border border-white/10 hover:bg-white/5 hover:text-cyan-300 transition">
+                    <i class="ri-arrow-up-line"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        menuBtn?.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const id = a.getAttribute('href');
+                if (id && id.length > 1) {
+                    e.preventDefault();
+                    document.querySelector(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    mobileMenu.classList.add('hidden');
+                }
+            })
+        });
+
+        // Reveal on scroll
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) { entry.target.classList.add('show'); }
+            })
+        }, { threshold: 0.15 });
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+</body>
+
+</html>
